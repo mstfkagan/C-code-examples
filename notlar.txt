@@ -1,0 +1,106 @@
+// yorum satırı
+/* araya yazılan her şey yorum*/
+printf("Hello world \n")----> \n bir sonraki satıra geç demek
+\n\n  araya boşuk bırakır
+\b backspace tuşu işlevi sondan başa doğru siler ne kadar koyarsan o kadar siler
+\t yatay sekme tab işlevi görür 1 sekme(satır değil) boşluk bırakır
+\" çift tırnak içine alır "This \"is\" wonderful\n " is kelimesini tırnak içine alır
+\\ backslash koyar
+%c char için (metinsel ifadelerde kullanılmaz)
+%d ineteger için
+%f float için
+%lf double için
+%u aralıkta olmayan sayılar için [aralıklar resim klasöründe var] (ama intten önce unsigned yaz)
+%s metinsel ifadeleri çıktı olarak almak için kullanılır
+scanf iki kelimelik şeyi arada boşluk olursa okuyamaz
+++ arttırma
+-- eksiltme
+% mod alma operatörü MOD KALAN DEMEKTİR
+sayılar float olsa bile %d ile printf' de yazdırabilirsin
+++ başa yazılırsa önce 1 ekler
+eğer ++ sona yazılırsa sonra 1 ekler
+
+x +=2--->x = x + 2 burada -,*,/ de konulabilir
+
+& işlemi ve anlamına gelir matematikte ve ile aynı görev 1-1=1 geri kalan sıfır
+| veya kapısı ile aynı en az bir tanesi 1 olursa cevap 1 olur
+^ XOR ANAHTARI İKİSİ BİRBİRİNDEN FARKLIYSA CEVAP 1
+
+^ İŞARETİ İKİSİ BİRBİRİNDEN FARKLIYSA CEVAP 1 OLUR AYNI OLURSA 0 OLUR XOR İŞARETİ OLARAK GEÇER
+<<2 İŞARETİ BİT NUMARALARINI  2 SOLA KAYDIR DEMEK
+>>2 İŞARETİ BİT NUMARALARINI 2 SAĞA KAYDIR DEMEK
+
+== işareti x==y gibi (x=y) x eşit midir y'ye anlamı eğer eşitse 1 değilse 0 olarak çıktı gelir
+!= X!=Y   EŞİT DEĞİL MİDİR SORUSU (eşitse 0 eşit değilse 1 cevabı verir )
+
+&& logical and (ve kapısı gibi düşün her iki ifade de doğruysa 1)
+|| veya kapısı
+^ XOR KAPISI İKİSİNİN CEVABI BİRBİRİNDE FARKLI OLACAK (BİRİ DOĞRU BİRİ YANLIŞSA CVP 1)
+! LOGİCAL NOT (SONUCU TERSİNE ÇEVİRİR, DOĞRUYSA YANLIŞA, YANLIŞSA DOĞRUYA ÇEVİRİR)
+printf("result7 = %d\n",!(x>2 && y>9) );
+if
+else
+else if (ilk koşul yanlışsa test edilecek yeni koşul belirtmek için kullanır) 
+KULLANMA SINIRI YOK ELSE YAZANA KADAR KULLANILABİLİR
+%.2f demek virgülden sonra 2 basamak yazar 
+
+
+
+exp fonksiyonu e değerinin üslerini almaya yarar
+printf("e uzeri %d: %f\n",i,exp(i)) kütüphaneye math.h eklemeyi unutma
+
+exp2(5) fonksiyonu da 2 değerinin 5i'inci kuvvetini hesaplar
+ÇIKTISI FLOAT OLARAK ÇIKAR INT İLE KARIŞTIRMA
+
+sqrt fonksiyonu
+printf("Karekok %d = %.3f\n",i,sqrt(i));//KAREKÖKÜNÜ ALMAYI SAĞLAR
+ÇIKTISI FLOAT
+
+
+
+KUVVETİNİ ALMA fonksiyonu pow
+ÇIKTILAR FLOAT DİKKAT
+printf("%d uzeri %d = %.2f",number,number2,pow(number,number2));
+
+
+LOGARTİMA AMA e TABANINDA HESAPLAR
+printf("log(3) = %.3f",log(3));//logaritma e tabanında 3 ü hesaplar
+
+
+cbrt fonksiyonu DEĞERİN KÜP KÖKÜNÜ HESAPLAR
+
+
+ceil ONDALIK SAYIYI BİR ÜST TAM DEĞERE YUVARLAR(6.01----->7 GİBİ)
+
+floor FONK. ONDALIK SAYIYI BİR ALT TAM DEĞERE YUVARLAR(6.99------>6 GİBİ)
+
+fabs FONK ONDALIKLI SAYININ MUTLAK DEĞER ALMAYA YARAR
+printf("Result: %.2f",fabs(-7.19)); ---->7.19 gibi
+
+
+double x5=-9, result5;
+
+result5 = abs(x5);  //TAM SAYININ MUTLAK DEĞERİ
+
+printf("Result: %d\n",result5);//BU ŞEKİLDE KULLANILMAZ f OLMALI
+
+printf("Result: %d\n",abs(-9));//BURADA ÇIKTIDA f YERİNE d KOYABİLDİK
+
+fdim FONK ARADAKİ FARKI HESAPLAR FAKAR FARK EKSİ İSE 0 OLARAK YAZDIRIR
+
+double a=7,b=3,c=19;
+printf("%.2f ve %.2f sayilarinin farki: %.2f\n",a,b,fdim(a,b));
+
+printf("%.2f ve %.2f sayilarinin farki: %.2f\n",a,c,fdim(a,c));//
+fdim ARADAKİ FARKI HESAPLAR AMA FARK EKSİ İSE 0 YAZDIRIR
+
+fma FONKSİYONU (BİRİNİCİ * İKİNCİ) + ÜÇÜNCÜ
+
+result6 = fma(a1,b1,c1);//(a1*b1) + c1 HESAPLAR
+
+fmax FONK İKİ SAYİDAN BÜYÜK OLANI YAZDIRIR
+
+
+fmod FONK ONDALIK SAYININ BÖLÜMÜNDEN KALANI VERİR
+
+hypot FONK HİPOTENÜSÜ HESAPLAR İKİ DEĞER KULLANILIR hypot(3,4) ---->5 gibi

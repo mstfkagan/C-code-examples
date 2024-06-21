@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../c deneme"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"56.C": "cpp",
+			"64.C": "cpp"
+		}
+	}
+}
